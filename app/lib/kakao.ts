@@ -12,12 +12,12 @@ export const checkKaKaoSDK = () => {
 export const handleClickChatChannel = () => {
   checkKaKaoSDK()
   window.Kakao.Channel.chat({
-    channelPublicId: '_qwsxeb',
+    channelPublicId: '_xikYxeb',
   })
 }
 export const handleClickAddChannel = () => {
   checkKaKaoSDK()
   window.Kakao.Channel.addChannel({
-    channelPublicId: '_qwsxeb',
+    channelPublicId: '_xikYxeb',
   })
 }

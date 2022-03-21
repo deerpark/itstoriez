@@ -42,7 +42,7 @@ export function Header({ title, Icon, desc, prevRoute, cover, date, sidebar, isW
         </div>
         <div className='bx-mobile-logo'>
           <Link to='/'>
-            <Icons.Logo className='w-16 h-10' />
+            <Icons.Logo className='w-32 h-4' />
           </Link>
         </div>
         <div className='bx-mobile-settings'>

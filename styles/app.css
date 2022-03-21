@@ -63,11 +63,11 @@
     @apply relative flex items-stretch outline-none;
   }
   .bx-button-label {
-    @apply m-[3px] mt-0 active:mt-0.5 focus:mt-0.5 relative z-10 px-2.5 flex flex-nowrap whitespace-nowrap gap-x-1 justify-center items-center bg-white dark:bg-slate-500 hover:bg-slate-100 active:bg-blue-50 focus:bg-blue-50 dark:hover:bg-slate-400 dark:active:bg-slate-300 dark:focus:bg-slate-300 text-slate-600 dark:text-slate-900 hover:text-slate-500 dark:hover:text-slate-800 border rounded border-slate-300 dark:border-slate-900 font-bold transition-all;
+    @apply m-[3px] mt-0 active:mt-0.5 focus:mt-0.5 relative z-10 px-2.5 flex flex-nowrap whitespace-nowrap gap-x-1 justify-center items-center bg-white dark:bg-slate-500 hover:bg-slate-100 active:bg-violet-50 focus:bg-violet-50 dark:hover:bg-slate-400 dark:active:bg-slate-300 dark:focus:bg-slate-300 text-slate-600 dark:text-slate-900 hover:text-slate-500 dark:hover:text-slate-800 border rounded border-slate-300 dark:border-slate-900 font-bold transition-all;
   }
   .bx-button-group > a:active .bx-button-label,
   .bx-button-group > a:active .bx-button-label {
-    @apply mt-0.5 bg-blue-50 dark:bg-slate-300;
+    @apply mt-0.5 bg-violet-50 dark:bg-slate-300;
   }
   .bx-button-icon {
     @apply flex-none;
@@ -127,10 +127,10 @@
     @apply px-0;
   }
   .bx-contents-h2 {
-    @apply flex items-center gap-x-2 px-0.5 md:px-1 text-2xs font-black text-blue-500;
+    @apply flex items-center gap-x-2 px-0.5 md:px-1 text-2xs font-black text-violet-500;
   }
   .bx-contents-h2 svg {
-    @apply w-3 h-3 md:w-5 md:h-5 fill-blue-500;
+    @apply w-3 h-3 md:w-5 md:h-5 fill-violet-600;
   }
   /* Cover Image */
   .bx-cover {
@@ -194,17 +194,17 @@
     @apply w-7 h-7 flex items-center justify-between;
   }
   .bx-header-icon .bx-icon-primary {
-    @apply fill-blue-600;
+    @apply fill-violet-700;
   }
   .bx-header-icon .bx-icon-secondary {
-    @apply fill-yellow-400;
+    @apply fill-lime-400;
   }
   /* Logo */
   .bx-logo-primary {
-    @apply fill-blue-600 dark:fill-white transition-colors;
+    @apply fill-lime-500 dark:fill-slate-700 transition-colors;
   }
   .bx-logo-secondary {
-    @apply fill-slate-400 dark:fill-white dark:opacity-50 transition-colors;
+    @apply fill-slate-700 dark:fill-slate-100 transition-colors;
   }
   /* Hero */
   .bx-hero {
@@ -217,20 +217,19 @@
     @apply inline transition-all hover:transform hover:scale-110 focus:scale-100 active:scale-100;
   }
   .bx-hero-logo .bx-logo-primary {
-    @apply fill-blue-600 dark:fill-yellow-400;
+    @apply fill-lime-500 dark:fill-slate-700;
   }
   .bx-hero-logo .bx-logo-secondary {
-    @apply fill-slate-400 dark:fill-blue-600 dark:opacity-100;
+    @apply fill-slate-700 dark:fill-slate-100;
   }
   .bx-hero-logo a:hover .bx-logo-primary {
-    fill: #F8BF0F;
-    @apply dark:fill-slate-300;
+    @apply fill-slate-100 dark:fill-slate-700;
   }
   .bx-hero-logo a:hover .bx-logo-secondary {
-    @apply fill-blue-600 dark:fill-slate-300;
+    @apply fill-violet-600 dark:fill-violet-400;
   }
   .bx-hero-links {
-    @apply w-full px-8 mt-10 mb-8;
+    @apply w-full px-8 mt-8 mb-8;
   }
   .bx-hero-links > .bx-button-group > * {
     @apply flex-1;
@@ -281,14 +280,14 @@
   }
   .bx-nav-item-active .bx-nav-arrow,
   .bx-nav-item:hover .bx-nav-arrow {
-    @apply fill-blue-600 dark:fill-blue-500 transform translate-x-2;
+    @apply fill-violet-700 dark:fill-violet-500 transform translate-x-2;
   }
   .bx-nav-item-active .bx-nav-arrow {
     @apply translate-x-0;
   }
   .bx-nav-item-active .bx-nav-icon::after,
   .bx-nav-item:hover .bx-nav-icon::after {
-    @apply w-10 h-10 bg-blue-300 dark:bg-blue-900;
+    @apply w-10 h-10 bg-violet-300 dark:bg-violet-900;
   }
   .bx-nav-item-active .bx-nav-icon::after {
     @apply w-0 h-0;
@@ -299,19 +298,19 @@
   }
   .bx-nav-item-active  .bx-icon-primary,
   .bx-nav-item:hover .bx-icon-primary {
-    @apply fill-blue-600;
+    @apply fill-violet-700;
   }
   .bx-nav-item-active .bx-icon-secondary,
   .bx-nav-item:hover .bx-icon-secondary {
-    @apply fill-yellow-400;
+    @apply fill-lime-400;
   }
   .bx-nav-item-active .bx-nav-name,
   .bx-nav-item:hover .bx-nav-name {
-    @apply text-blue-600 dark:text-blue-500 transform translate-x-1 delay-100;
+    @apply text-violet-600 dark:text-violet-500 transform translate-x-1 delay-100;
   }
   .bx-nav-item-active .bx-nav-desc,
   .bx-nav-item:hover .bx-nav-desc {
-    @apply text-blue-500 dark:text-blue-500 transform translate-x-1 delay-100;
+    @apply text-violet-500 dark:text-violet-500 transform translate-x-1 delay-100;
   }
   /* Footer */
   .bx-footer {
@@ -332,21 +331,23 @@
   .bx-footer-logo a {
     @apply transition-all transform hover:scale-110 active:scale-100 focus:scale-100;
   }
-  .bx-footer-logo .bx-logo-primary,
+  .bx-footer-logo .bx-logo-primary {
+    @apply fill-slate-100 dark:fill-slate-800;
+  }
   .bx-footer-logo .bx-logo-secondary {
     @apply fill-slate-300 dark:fill-slate-600;
   }
   .bx-footer:hover .bx-logo-primary {
-    @apply fill-slate-400 dark:fill-slate-500;
+    @apply fill-slate-100 dark:fill-slate-800;
   }
   .bx-footer:hover .bx-logo-secondary {
     @apply fill-slate-400 dark:fill-slate-500;
   }
   .bx-footer-logo a:hover .bx-logo-primary {
-    fill: #F8BF0F;
+    @apply fill-slate-100 dark:fill-slate-800;
   }
   .bx-footer-logo a:hover .bx-logo-secondary {
-    @apply fill-blue-600;
+    @apply fill-violet-500 dark:fill-violet-400;
   }
   .bx-footer-sns {
     @apply flex items-center gap-x-4;
@@ -375,22 +376,22 @@
     @apply w-4 h-4;
   }
   .bx-banner-icon .bx-icon-primary {
-    @apply fill-yellow-800;
+    @apply fill-lime-800;
   }
   .bx-banner-icon .bx-icon-secondary {
-    @apply fill-yellow-600;
+    @apply fill-lime-600;
   }
   .bx-banner-title {
-    @apply flex grow shrink items-center truncate overflow-hidden break-words text-xs font-bold text-yellow-700;
+    @apply flex grow shrink items-center truncate overflow-hidden break-words text-xs font-bold text-lime-700;
   }
   .bx-banner-link {
     @apply flex flex-none items-center;
   }
   .bx-banner-link .bx-button-label {
-    @apply bg-white hover:bg-yellow-50 active:bg-white focus:bg-white text-yellow-600 hover:text-yellow-700 border-yellow-600;
+    @apply bg-white hover:bg-lime-50 active:bg-white focus:bg-white text-lime-600 hover:text-lime-700 border-lime-600;
   }
   .bx-banner-link .bx-button-background {
-    @apply bg-yellow-500 border-yellow-600;
+    @apply bg-lime-500 border-lime-600;
   }
   /* Thumbnail */
   .bx-thumbnail {
@@ -492,23 +493,23 @@
     @apply flex items-center px-5 md:px-8;
   }
   .bx-section-title {
-    @apply grow flex gap-x-2 text-xs leading-none items-center font-extrabold text-blue-600 dark:text-blue-500;
+    @apply grow flex gap-x-2 text-xs leading-none items-center font-extrabold text-violet-600 dark:text-violet-500;
   }
   .bx-section-title svg {
-    @apply w-4 h-4 fill-blue-600 dark:fill-blue-500;
+    @apply w-4 h-4 fill-violet-700 dark:fill-violet-500;
   }
   .bx-section-title .bx-icon-primary {
-    @apply fill-yellow-400;
+    @apply fill-lime-400;
   }
   .bx-section-title .bx-icon-secondary {
-    @apply fill-blue-600 dark:fill-blue-500;
+    @apply fill-violet-700 dark:fill-violet-500;
   }
   .bx-section-extra {
     @apply pr-1 flex-none flex items-center text-sm font-black text-slate-700 dark:text-slate-200;
   }
   /* Badge */
   .bx-badge {
-    @apply inline-block px-0.5 rounded-sm bg-yellow-400 text-blue-600 text-xs font-black;
+    @apply inline-block px-0.5 rounded-sm bg-lime-400 text-violet-600 text-xs font-black;
   }
   /* Privacy */
   .bx-privacy {

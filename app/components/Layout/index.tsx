@@ -43,7 +43,7 @@ export function SiteMeta() {
         crossOrigin='anonymous'
       ></script> */}
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-      {/* <script async src='https://www.googletagmanager.com/gtag/js?id=G-NTZDCTHDX5'></script>
+      <script async src='https://www.googletagmanager.com/gtag/js?id=G-680VM1GSFB'></script>
       <script
         dangerouslySetInnerHTML={{
           __html: `
@@ -51,12 +51,12 @@ export function SiteMeta() {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-NTZDCTHDX5');
+        gtag('config', 'G-680VM1GSFB');
       `,
         }}
-      ></script> */}
+      ></script>
       {/* <!-- Channel Plugin Scripts --> */}
-      {/* <script
+      <script
         dangerouslySetInnerHTML={{
           __html: `(function() {
           var w = window;
@@ -94,12 +94,12 @@ export function SiteMeta() {
           }
         })();
         ChannelIO('boot', {
-          "pluginKey": "baffea9f-5cfd-4d5d-935a-73409641e1f6"
+          "pluginKey": "b25faed5-0d55-4f74-adf4-405b23f46c7b"
         });`,
         }}
-      ></script> */}
+      ></script>
       {/* <!-- End Channel Plugin --> */}
-      {/* <script async src='https://developers.kakao.com/sdk/js/kakao.min.js'></script> */}
+      <script async src='https://developers.kakao.com/sdk/js/kakao.min.js'></script>
     </>
   )
 }
@@ -147,13 +147,13 @@ export function RootLayout({ isRoot, children, pathname, sidebar }: RootLayoutPr
           <Hero
             isRoot={isRoot}
             heroString={heroString}
-            desc='더 나은 사용자 경험을 생각하며 꼼꼼하게 만들어 드려요.'
+            desc='항상 궁금했던 정보 바로 알려드려요.'
             links={[
-              { url: '/contact', label: '무료 상담' },
               {
-                url: '/plan',
-                label: '요금표 확인',
+                url: '/about',
+                label: '소개',
               },
+              { url: '/contact', label: '무료 상담' },
             ]}
           />
           <Nav {...{ nav, pathname }} />
