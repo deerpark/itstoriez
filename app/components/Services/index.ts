@@ -1,0 +1,6 @@
+export * from '~/components/Services/Recommend'
+export * from '~/components/Services/Tech'
+export * from '~/components/Services/Flow'
+export * from '~/components/Services/Crews'
+export * from '~/components/Services/FAQ'
+export * from '~/components/Services/Refund'

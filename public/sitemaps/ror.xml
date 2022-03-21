@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://www.bolt-ux.com/</title>
+  <link>http://www.bolt-ux.com/</link>
+
+<item>
+     <link>https://www.bolt-ux.com/</link>
+     <title>BOLT UX</title>
+     <description>BOLT UX official blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/contact</link>
+     <title>BOLT UX</title>
+     <description>BOLT UX official blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/plan</link>
+     <title>BOLT UX</title>
+     <description>BOLT UX official blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/notices</link>
+     <title>BOLT UX</title>
+     <description>BOLT UX official blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/news</link>
+     <title>BOLT UX</title>
+     <description>BOLT UX official blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/services/homepage</link>
+     <title>BOLT UX</title>
+     <description>BOLT UX official blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/services/singlepage</link>
+     <title>BOLT UX</title>
+     <description>BOLT UX official blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/services/publishing</link>
+     <title>BOLT UX</title>
+     <description>BOLT UX official blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/services/appdesign</link>
+     <title>BOLT UX</title>
+     <description>BOLT UX official blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/services/branding</link>
+     <title>BOLT UX</title>
+     <description>BOLT UX official blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/settings</link>
+     <title>BOLT UX</title>
+     <description>BOLT UX official blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/notices/preparing-to-open</link>
+     <title>오픈 기념 10% 할인 이벤트</title>
+     <description>더 나은 UX를 고집합니다.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/news/not-another-framework</link>
+     <title>Not Another Framework!</title>
+     <description>더 나은 UX를 고집합니다.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bolt-ux.com/news/tailwindcss-3-0</link>
+     <title>TailwindCSS 3.0</title>
+     <description>더 나은 UX를 고집합니다.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
