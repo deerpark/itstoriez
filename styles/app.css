@@ -404,9 +404,6 @@
   .bx-post-link {
     @apply aspect-video p-5 md:p-8 flex flex-col gap-y-4;
   }
-  .bx-section:first-of-type .bx-post-link {
-    @apply -mt-5 md:-mt-8;
-  }
   .bx-post-thumb {
     @apply overflow-hidden rounded-lg;
   }
@@ -432,10 +429,7 @@
     @apply flex-none;
   }
   .bx-other-post .bx-post-link {
-    @apply aspect-auto flex flex-row gap-y-0 gap-x-4 p-5 md:p-8 ;
-  }
-  .bx-section:first-of-type .bx-other-post .bx-post-link {
-    @apply pt-0;
+    @apply aspect-auto flex flex-row gap-y-0 gap-x-4 p-5 md:px-8 md:py-3;
   }
   .bx-other-post .bx-post-thumb {
     @apply order-2 flex-none aspect-square w-24 h-24;
