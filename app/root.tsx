@@ -7,13 +7,19 @@ import { usePrevRoute, useNav, Route } from '~/lib/config'
 import { RootLayout, Layout, SiteMeta } from '~/components/Layout'
 import * as Icons from '~/components/Icon'
 
-import appStyles from './styles/app.css'
+import appStyles from '~/styles/app.css'
 
 export function links() {
   return [
     {
       rel: 'stylesheet',
       href: 'https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css',
+    },
+    {
+      rel: 'stylesheet',
+      integrity: 'sha256-TehzF/2QvNKhGQrrNpoOb2Ck4iGZ1J/DI4pkd2oUsBc=',
+      crossOrigin: 'anonymous',
+      href: 'https://cdn.jsdelivr.net/npm/instantsearch.css@7.4.5/themes/satellite-min.css',
     },
     { rel: 'stylesheet', href: appStyles },
   ]

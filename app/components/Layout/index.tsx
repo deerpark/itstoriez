@@ -1,3 +1,6 @@
+import { Link } from 'remix'
+import algoliasearch from 'algoliasearch/lite'
+import { InstantSearch, SearchBox, connectStateResults, Hits, Highlight } from 'react-instantsearch-dom'
 import { ReactElement } from 'react'
 import { Route, heroString, nav } from '~/lib/config'
 import { Header } from '~/components/Header'
@@ -5,6 +8,8 @@ import { Hero } from '~/components/Hero'
 import { Nav } from '~/components/Nav'
 import { Footer } from '~/components/Footer'
 import { Banner, Promotion } from '~/components/Banner'
+
+const searchClient = algoliasearch('3QL5WDX52V', '98ab48d6701bbe119f7fd1e63a3a5a0c')
 
 type LayoutProps = Route & {
   children: ReactElement | ReactElement[],
@@ -139,6 +144,25 @@ export function Layout({
   )
 }
 
+const Hit = ({ hit }: any) => {
+  console.log(hit)
+  return (
+    <Link to={`${hit.category.slug}/${hit.slug}`}>
+      <Highlight attribute='title' hit={hit} />
+    </Link>
+  )
+}
+
+const Results = connectStateResults(
+  ({ searchState, searchResults, children }: any) =>
+    (searchState.query &&
+      (searchResults && searchResults.nbHits !== 0 ? (
+        children
+      ) : (
+        <div>No results have been found for {searchState.query}.</div>
+      ))) || <></>
+)
+
 export function RootLayout({ isRoot, children, pathname, sidebar }: RootLayoutProps) {
   return (
     <div className='bx-container'>
@@ -146,7 +170,7 @@ export function RootLayout({ isRoot, children, pathname, sidebar }: RootLayoutPr
         <div className={`bx-page bx-page-root ${isRoot ? '' : 'hidden md:flex'}`}>
           <Hero
             isRoot={isRoot}
-            heroString={heroString}
+            /* heroString={heroString}
             desc='항상 궁금했던 정보 바로 알려드려요.'
             links={[
               {
@@ -154,8 +178,29 @@ export function RootLayout({ isRoot, children, pathname, sidebar }: RootLayoutPr
                 label: '소개',
               },
               { url: '/contact', label: '무료 상담' },
-            ]}
+            ]} */
           />
+          <div className='mx-5 md:mx-8 mb-5 md:mb-8'>
+            <InstantSearch
+              searchClient={searchClient}
+              indexName='itstrz'
+              /* onSearchStateChange={searchState => {
+              const page = `?query=${searchState.query}`
+              window.ga('send', 'pageView', page)
+            }} */
+            >
+              <SearchBox
+                translations={{
+                  /* submitTitle: 'Submit your search query.',
+                  resetTitle: 'Clear your search query.', */
+                  placeholder: '검색어 입력...',
+                }}
+              />
+              <Results>
+                <Hits hitComponent={Hit} />
+              </Results>
+            </InstantSearch>
+          </div>
           <Nav {...{ nav, pathname }} />
           <div className={`${isRoot ? 'px-3 md:px-0' : ''}`}>
             <Footer />

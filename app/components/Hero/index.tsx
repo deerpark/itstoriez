@@ -4,7 +4,7 @@ import { HeroString } from '~/lib/config'
 import * as Icon from '~/components/Icon'
 
 type HeroProps = {
-  heroString: HeroString,
+  heroString?: HeroString,
   desc?: string,
   isRoot?: boolean,
   links?: { url?: string, label: string, handler?: () => void | undefined }[],
@@ -13,24 +13,26 @@ type HeroProps = {
 export function Hero({ heroString = [['', '']], desc, links, isRoot }: HeroProps) {
   return (
     <div className='bx-hero'>
-      <div className={`bx-hero-logo ${isRoot ? 'justify-center' : 'justify-center md:pb-4'}`}>
+      <div className={`bx-hero-logo ${isRoot ? 'justify-center' : 'justify-center md:pb-0'}`}>
         <Link className={`p-4 ${isRoot ? '' : 'md:p-0 md:py-10'}`} to='/'>
           <Icon.Logo className='w-32 h-4' />
         </Link>
       </div>
-      {(
+      {
         <>
-          <div className='flex flex-col items-center'>
-            {heroString.map(heading => (
-              <div
-                key={heading[0]}
-                className='inline-flex gap-x-0.5 text-2xl leading-tight text-slate-600 dark:text-slate-300 even:ml-5'
-              >
-                <span className='font-black'>{heading[0]}</span>
-                <span className='font-thin'>{heading[1]}</span>
-              </div>
-            ))}
-          </div>
+          {heroString && (
+            <div className='flex flex-col items-center'>
+              {heroString.map(heading => (
+                <div
+                  key={heading[0]}
+                  className='inline-flex gap-x-0.5 text-2xl leading-tight text-slate-600 dark:text-slate-300 even:ml-5'
+                >
+                  <span className='font-black'>{heading[0]}</span>
+                  <span className='font-thin'>{heading[1]}</span>
+                </div>
+              ))}
+            </div>
+          )}
           {desc && <div className='inline-flex max-w-[200px] text-xs my-3 text-center'>{desc}</div>}
           {links && (
             <div className='bx-hero-links'>
@@ -50,7 +52,7 @@ export function Hero({ heroString = [['', '']], desc, links, isRoot }: HeroProps
             </div>
           )}
         </>
-      )}
+      }
     </div>
   )
 }
